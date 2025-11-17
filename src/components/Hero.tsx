@@ -6,37 +6,40 @@ export function Hero() {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <ImageWithFallback
-          src="public/img1.jpg"
+          src="public/hero.gif"
           alt="Soldadura industrial de alta precisión"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover object-right"
         />
 
-        {/* Capa oscura principal (más fuerte) */}
-        <div className="absolute inset-0 bg-black/85"></div>
+        {/* Capa oscura principal (mucho más fuerte) */}
+        <div className="absolute inset-0 bg-black/90"></div>
 
-        {/* Gradiente para el lado izquierdo (hace que el texto destaque aún más) */}
-        <div className="absolute inset-0 bg-linear-to-r from-black/80 via-black/50 to-black/20"></div>
+        {/* Gradiente agresivo desde la izquierda */}
+        <div className="absolute inset-0 bg-linear-to-r from-black/95 via-black/70 to-black/30"></div>
       </div>
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 lg:px-8 py-4">
-        <div className="max-w-2xl">
-          <h1 className="mb-4 text-4xl md:text-5xl lg:text-6xl" style={{ color: '#FFE5CC', fontSize: 'clamp(1.75rem, 6vw, 4rem)', fontWeight: 'bold' }}>
+        <div className="max-w-2xl backdrop-blur-sm bg-black/30 p-6 md:p-8 ">
+          <h1 className="mb-8 text-4xl md:text-5xl lg:text-6xl" style={{ color: '#FFE5CC', fontSize: 'clamp(1.75rem, 6vw, 4rem)', fontWeight: 'bold', textShadow: '0 2px 10px rgba(0,0,0,0.8), 0 0 20px rgba(0,0,0,0.6), 2px 2px 4px rgba(0,0,0,0.9)' }}>
             Soldaduras Leiva
           </h1>
-          <h2 style={{ color: '#E0E1DD' }} className="mb-4 text-lg md:text-xl font-semibold">
-            Soldaduras de alta precisión para gasoductos y plantas
+          <h2 style={{ color: '#E0E1DD', textShadow: '0 2px 8px rgba(0,0,0,0.7), 1px 1px 3px rgba(0,0,0,0.8)' }} className="mb-8 text-xl md:text-2xl lg:text-3xl font-semibold">
+            Especialistas en soldadura industrial con certificaciones internacionales
           </h2>
-          <p style={{ color: '#FFA500' }} className="text-lg md:text-xl mb-6 font-semibold">
+          <p style={{ color: '#FFA500', textShadow: '0 2px 8px rgba(0,0,0,0.7), 1px 1px 3px rgba(0,0,0,0.8)' }} className="text-xl md:text-2xl lg:text-2xl mb-8 font-bold">
             Precisión que garantiza seguridad
           </p>
-          <p style={{ color: '#E0E1DD' }} className="mb-8 opacity-95 text-base md:text-lg leading-relaxed">
+{/*           <p style={{ color: '#FFA500', textShadow: '0 2px 8px rgba(0,0,0,0.7), 1px 1px 3px rgba(0,0,0,0.8)' }} className="text-xl md:text-2xl lg:text-2xl mb-8 font-bold">
+            Especialistas en soldadura industrial con certificaciones internacionales
+          </p> */}
+          {/*           <p style={{ color: '#E0E1DD', textShadow: '0 1px 6px rgba(0,0,0,0.7), 1px 1px 2px rgba(0,0,0,0.8)' }} className="mb-12 opacity-95 text-lg md:text-xl lg:text-xl leading-relaxed">
             Especialistas en soldadura industrial con certificaciones internacionales
             y habilitaciones de las principales empresas del sector energético.
-          </p>
+          </p> */}
           <a
             href="#contacto"
-            className="inline-block bg-[#F57C00] hover:bg-[#E86C00] text-white px-8 py-4 rounded-lg transition-all transform hover:scale-105 font-semibold text-lg shadow-lg"
+            className="inline-block bg-[#F57C00] hover:bg-[#E86C00] text-white px-8 py-4 rounded-lg transition-all transform hover:scale-105 font-bold text-lg shadow-lg"
           >
             Solicitar presupuesto
           </a>
