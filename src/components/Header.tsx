@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
-import logoImage from 'figma:asset/2517aaf0353fcc22330c25a16d237a7b1f3175e7.png';
+import logoImage from '../assets/favicon_sl.png';
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -25,7 +25,7 @@ export function Header() {
               className="h-12 w-auto"
             />
             <span className="text-white text-xl hidden sm:inline-block">
-              Soldaduras Leiva
+              
             </span>
           </a>
 
