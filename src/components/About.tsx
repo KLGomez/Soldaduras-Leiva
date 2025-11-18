@@ -33,7 +33,7 @@ export function About() {
           <div className="md:col-span-5">
             <div className="relative rounded-lg overflow-hidden shadow-2xl">
               <ImageWithFallback
-                src="https://images.unsplash.com/photo-1758798349125-5c297b18b8b2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwd29ya2VycyUyMHRlYW18ZW58MXx8fHwxNzYzMzk4NzI5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                src="public/vertical.gif"
                 alt="Equipo de trabajo profesional"
                 className="w-full h-full object-cover aspect-[3/4]"
               />
@@ -42,7 +42,7 @@ export function About() {
 
           {/* Right Column - Content */}
           <div className="md:col-span-7">
-            <h2 className="text-[#E0E1DD] mb-6">Experiencia y Profesionalismo</h2>
+            <h2 className="text-white font-bold" style={{ fontSize: 'clamp(1.5rem, 5vw, 2.5rem)' }}>Experiencia y Profesionalismo</h2>
             <div className="w-20 h-1 bg-[#F57C00] mb-6"></div>
             
             <p className="text-[#E0E1DD] mb-6 opacity-90">

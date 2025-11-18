@@ -28,7 +28,7 @@ export function Certifications() {
     <section id="certificaciones" className="py-16 md:py-20 bg-[#E0E1DD]">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-[#0D1B2A] mb-4">Certificaciones y Habilitaciones</h2>
+          <h2 className="text-[#0D1B2A] mb-4 font-bold" style={{ fontSize: 'clamp(1.5rem, 5vw, 2.5rem)' }}>Certificaciones y Habilitaciones</h2>
           <div className="w-20 h-1 bg-[#F57C00] mx-auto"></div>
         </div>
 

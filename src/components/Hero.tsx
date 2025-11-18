@@ -2,40 +2,47 @@ import { ImageWithFallback } from './figma/ImageWithFallback';
 
 export function Hero() {
   return (
-    <section id="inicio" className="bg-gradient-to-br from-[#0D1B2A] to-[#1B263B] text-white py-16 md:py-24">
-      <div className="container mx-auto px-4 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 items-center">
-          {/* Left Column - Content */}
-          <div className="md:col-span-6 lg:col-span-6">
-            <h1 className="text-[#E0E1DD] mb-6">
-              Soldaduras de alta precisión para gasoductos y plantas
-            </h1>
-            <p className="text-[#778DA9] text-xl md:text-2xl mb-8">
-              Precisión que garantiza seguridad
-            </p>
-            <p className="text-[#E0E1DD] mb-8 opacity-90">
-              Especialistas en soldadura industrial con certificaciones internacionales 
-              y habilitaciones de las principales empresas del sector energético.
-            </p>
-            <a
-              href="#contacto"
-              className="inline-block bg-[#F57C00] hover:bg-[#E86C00] text-white px-8 py-4 rounded-lg transition-all transform hover:scale-105"
-            >
-              Solicitar presupuesto
-            </a>
-          </div>
+    <section id="inicio" className="relative text-white py-16 md:py-28 lg:py-36 overflow-hidden">
+      {/* Background Image with Overlay */}
+      <div className="absolute inset-0 z-0">
+        <ImageWithFallback
+          src="public/hero.gif"
+          alt="Soldadura industrial de alta precisión"
+          className="w-full h-full object-cover object-right"
+        />
 
-          {/* Right Column - Hero Image */}
-          <div className="md:col-span-6 lg:col-span-6">
-            <div className="relative rounded-lg overflow-hidden shadow-2xl">
-              <ImageWithFallback
-                src="https://images.unsplash.com/photo-1564182998571-fa75ffce6a22?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwd2VsZGluZyUyMHNwYXJrc3xlbnwxfHx8fDE3NjMzOTMyMzN8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-                alt="Soldadura industrial de alta precisión"
-                className="w-full h-full object-cover aspect-[4/3]"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0D1B2A]/50 to-transparent"></div>
-            </div>
-          </div>
+        {/* Capa oscura principal (mucho más fuerte) */}
+        <div className="absolute inset-0 bg-black/90"></div>
+
+        {/* Gradiente agresivo desde la izquierda */}
+        <div className="absolute inset-0 bg-linear-to-r from-black/95 via-black/70 to-black/30"></div>
+      </div>
+
+      {/* Content */}
+      <div className="relative z-10 container mx-auto px-4 lg:px-8 py-4">
+        <div className="max-w-2xl backdrop-blur-sm bg-black/30 p-6 md:p-8 ">
+          <h1 className="mb-8 text-4xl md:text-5xl lg:text-6xl" style={{ color: '#FFE5CC', fontSize: 'clamp(1.75rem, 6vw, 4rem)', fontWeight: 'bold', textShadow: '0 2px 10px rgba(0,0,0,0.8), 0 0 20px rgba(0,0,0,0.6), 2px 2px 4px rgba(0,0,0,0.9)' }}>
+            Soldaduras Leiva
+          </h1>
+          <h2 style={{ color: '#E0E1DD', textShadow: '0 2px 8px rgba(0,0,0,0.7), 1px 1px 3px rgba(0,0,0,0.8)' }} className="mb-8 text-xl md:text-2xl lg:text-3xl font-semibold">
+            Especialistas en soldadura industrial con certificaciones internacionales
+          </h2>
+          <p style={{ color: '#FFA500', textShadow: '0 2px 8px rgba(0,0,0,0.7), 1px 1px 3px rgba(0,0,0,0.8)' }} className="text-xl md:text-2xl lg:text-2xl mb-8 font-bold">
+            Precisión que garantiza seguridad
+          </p>
+{/*           <p style={{ color: '#FFA500', textShadow: '0 2px 8px rgba(0,0,0,0.7), 1px 1px 3px rgba(0,0,0,0.8)' }} className="text-xl md:text-2xl lg:text-2xl mb-8 font-bold">
+            Especialistas en soldadura industrial con certificaciones internacionales
+          </p> */}
+          {/*           <p style={{ color: '#E0E1DD', textShadow: '0 1px 6px rgba(0,0,0,0.7), 1px 1px 2px rgba(0,0,0,0.8)' }} className="mb-12 opacity-95 text-lg md:text-xl lg:text-xl leading-relaxed">
+            Especialistas en soldadura industrial con certificaciones internacionales
+            y habilitaciones de las principales empresas del sector energético.
+          </p> */}
+          <a
+            href="#contacto"
+            className="inline-block bg-[#F57C00] hover:bg-[#E86C00] text-white px-8 py-4 rounded-lg transition-all transform hover:scale-105 font-bold text-lg shadow-lg"
+          >
+            Solicitar presupuesto
+          </a>
         </div>
       </div>
     </section>
