@@ -33,7 +33,7 @@ export function About() {
           <div className="md:col-span-5">
             <div className="relative rounded-lg overflow-hidden shadow-2xl">
               <ImageWithFallback
-                src="public/vertical.gif"
+                src="/vertical.gif"
                 alt="Equipo de trabajo profesional"
                 className="w-full h-full object-cover aspect-[3/4]"
               />

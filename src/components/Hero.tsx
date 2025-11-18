@@ -6,7 +6,7 @@ export function Hero() {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <ImageWithFallback
-          src="public/hero.gif"
+          src="/hero.gif"
           alt="Soldadura industrial de alta precisión"
           className="w-full h-full object-cover object-right"
         />
