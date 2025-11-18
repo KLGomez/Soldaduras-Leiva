@@ -42,7 +42,7 @@ export function About() {
 
           {/* Right Column - Content */}
           <div className="md:col-span-7">
-            <h2 className="text-white text-3xl md:text-4xl font-bold mb-1">Experiencia y Profesionalismo</h2>
+            <h2 className="text-white font-bold" style={{ fontSize: 'clamp(1.5rem, 5vw, 2.5rem)' }}>Experiencia y Profesionalismo</h2>
             <div className="w-20 h-1 bg-[#F57C00] mb-6"></div>
             
             <p className="text-[#E0E1DD] mb-6 opacity-90">

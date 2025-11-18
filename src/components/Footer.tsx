@@ -22,7 +22,7 @@ export function Footer() {
               <div className="w-10 h-10 rounded flex items-center justify-center">
                 <img src={faviconImage} alt="SL" className="text-white h-auto w-auto" />
               </div>
-              <h2 className="text-white font-semibold">Soldaduras Leiva</h2>
+              <h2 className="text-white font-bold text-lg md:text-xl">Soldaduras Leiva</h2>
             </div>
             <p style={{ color: '#778DA9' }} className="mb-4">
               Especialistas en soldadura industrial con certificaciones internacionales 
@@ -54,7 +54,7 @@ export function Footer() {
               <div className="flex items-start gap-3">
                 <MapPin className="shrink-0" style={{ color: '#F57C00' }} size={20} />
                 <p style={{ color: '#778DA9' }}>
-                  DR. Carlos Pío Collivadino 670<br />
+                  Dr. Carlos Pío Collivadino 670<br />
                   Temperley (1834), Buenos Aires
                 </p>
               </div>
@@ -66,8 +66,8 @@ export function Footer() {
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="shrink-0" style={{ color: '#F57C00' }} size={20} />
-                <a href="mailto:info@soldadurasleiva.com" className="hover:text-[#F57C00] transition-colors" style={{ color: '#778DA9' }}>
-                  info@soldadurasleiva.com
+                <a href="mailto:info.soldadurasleiva@gmail.com" className="hover:text-[#F57C00] transition-colors" style={{ color: '#778DA9' }}>
+                  info.soldadurasleiva@gmail.com
                 </a>
               </div>
             </div>

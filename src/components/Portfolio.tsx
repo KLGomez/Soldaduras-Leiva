@@ -38,9 +38,9 @@ export function Portfolio() {
     <section id="trabajos" className="py-16 md:py-20 bg-[#E0E1DD]">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-[#0D1B2A] mb-4">Trabajos Realizados</h2>
+          <h2 className="text-[#0D1B2A] mb-4 font-bold" style={{ fontSize: 'clamp(1.5rem, 5vw, 2.5rem)' }}>Trabajos Realizados</h2>
           <div className="w-20 h-1 bg-[#F57C00] mx-auto mb-4"></div>
-          <p className="text-[#415A77] max-w-2xl mx-auto">
+          <p className="text-[#415A77] max-w-2xl mx-auto" style={{ fontSize: 'clamp(0.95rem, 3vw, 1.1rem)' }}>
             Proyectos ejecutados con los más altos estándares de calidad y seguridad.
           </p>
         </div>
