@@ -1,4 +1,4 @@
-import { Award, CheckCircle, Shield, FileCheck } from 'lucide-react';
+import { Award, CheckCircle, Shield, FileCheck, Flame } from 'lucide-react';
 
 export function Certifications() {
   const certifications = [
@@ -15,13 +15,18 @@ export function Certifications() {
     {
       icon: Shield,
       title: 'Matriculación Metrogas',
-      description: 'Habilitación oficial',
+      description: 'Proveedor certificado',
     },
     {
       icon: FileCheck,
       title: 'Matriculación Naturgy Argentina',
       description: 'Proveedor certificado',
     },
+    {
+      icon: Flame,
+      title: 'Matriculación Camuzzi Gas Pampeana',
+      description: 'Proveedor certificado',
+    }
   ];
 
   return (
@@ -32,13 +37,13 @@ export function Certifications() {
           <div className="w-20 h-1 bg-[#F57C00] mx-auto"></div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center max-w-6xl mx-auto">
           {certifications.map((cert, index) => {
             const IconComponent = cert.icon;
             return (
               <div
                 key={index}
-                className="bg-white p-6 rounded-lg text-center hover:shadow-xl transition-shadow border border-[#778DA9]/20"
+                className="bg-white p-6 rounded-lg text-center hover:shadow-xl transition-shadow border border-[#778DA9]/20 w-full"
               >
                 <div className="w-16 h-16 mx-auto mb-4 bg-[#415A77] rounded-full flex items-center justify-center">
                   <IconComponent className="text-white" size={32} />

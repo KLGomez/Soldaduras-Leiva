@@ -145,8 +145,11 @@ export function Contact() {
                 </div>
                 <div>
                   <h3 className="text-[#0D1B2A] mb-1">Teléfono</h3>
-                  <a href="tel:+541139760464" className="text-[#F57C00] hover:underline">
+{/*                   <a href="tel:+541139760464" className="text-[#F57C00] hover:underline">
                     +54 (011) 3976-0464
+                  </a> */}
+                  <a href="tel:+541139017592" className="text-[#F57C00] hover:underline">
+                    +54 (011) 3901-7592
                   </a>
                 </div>
               </div>
