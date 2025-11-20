@@ -25,7 +25,7 @@ export function Footer() {
               <h2 className="text-white font-bold text-lg md:text-xl">Soldaduras Leiva</h2>
             </div>
             <p style={{ color: '#778DA9' }} className="mb-4">
-              Especialistas en soldadura industrial con certificaciones internacionales 
+              Especialistas en soldadura industrial con certificaciones internacionales
               para gasoductos y plantas.
             </p>
           </div>
@@ -60,8 +60,11 @@ export function Footer() {
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="shrink-0" style={{ color: '#F57C00' }} size={20} />
-                <a href="tel:+541139760464" className="hover:text-[#F57C00] transition-colors" style={{ color: '#778DA9' }}>
+{/*                 <a href="tel:+541139760464" className="hover:text-[#F57C00] transition-colors" style={{ color: '#778DA9' }}>
                   +54 (011) 3976-0464
+                </a> */}
+                <a href="tel:+541139017592" className="hover:text-[#F57C00] transition-colors" style={{ color: '#778DA9' }}>
+                  +54 (011) 3901-7592
                 </a>
               </div>
               <div className="flex items-center gap-3">
