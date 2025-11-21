@@ -1,4 +1,4 @@
-import { ImageWithFallback } from './figma/ImageWithFallback';
+import { ProjectCarousel } from './ProjectCarousel';
 
 export function Portfolio() {
   const projects = [
@@ -47,25 +47,12 @@ export function Portfolio() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project, index) => (
-            <div
+            <ProjectCarousel
               key={index}
-              className="group relative overflow-hidden rounded-lg bg-white shadow-lg hover:shadow-2xl transition-all"
-            >
-              <div className="relative overflow-hidden aspect-[4/3]">
-                <ImageWithFallback
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0D1B2A]/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
-              </div>
-              <div className="p-6">
-                <div className="inline-block px-3 py-1 bg-[#F57C00] text-white rounded-full text-sm mb-2">
-                  {project.category}
-                </div>
-                <h3 className="text-[#0D1B2A]">{project.title}</h3>
-              </div>
-            </div>
+              image={project.image}
+              title={project.title}
+              category={project.category}
+            />
           ))}
         </div>
       </div>
