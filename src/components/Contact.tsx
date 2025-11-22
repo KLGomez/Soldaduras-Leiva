@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Phone, Mail, MapPin, Send } from 'lucide-react';
+import { Phone, Mail, MapPin, Send, Link } from 'lucide-react';
 import Swal from 'sweetalert2';
 
 export function Contact() {
@@ -162,6 +162,18 @@ export function Contact() {
                   <h3 className="text-[#0D1B2A] mb-1">Email</h3>
                   <a href="mailto:info.soldadurasleiva@gmail.com" className="text-[#F57C00] hover:underline">
                     info.soldadurasleiva@gmail.com
+                  </a>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <div className="w-10 h-10 flex-shrink-0 bg-[#415A77] rounded-lg flex items-center justify-center">
+                  <Link className="text-white" size={20} />
+                </div>
+                <div>
+                  <h3 className="text-[#0D1B2A] mb-1">LinkedIn</h3>
+                  <a href="https://www.linkedin.com/company/soldaduras-leiva" target="_blank" rel="noopener noreferrer" className="text-[#F57C00] hover:underline">
+                    Soldaduras Leiva
                   </a>
                 </div>
               </div>
