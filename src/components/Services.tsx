@@ -5,7 +5,7 @@ import {
   GitMerge, 
   Layers, 
   Ruler, 
-  HardHat, 
+/*   HardHat,  */
   TrendingUp, 
   Gauge, 
   Mountain, 
@@ -70,11 +70,11 @@ export function Services() {
       title: 'Fabricación de tapas de cámaras',
       description: 'Elementos de cierre para cámaras de válvulas y accesos.',
     },
-    {
+/*     {
       icon: HardHat,
       title: 'Proyectos integrales',
       description: 'Soluciones completas desde el diseño hasta la puesta en marcha.',
-    },
+    }, */
   ];
 
   return (

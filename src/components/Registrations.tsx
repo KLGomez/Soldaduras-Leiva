@@ -28,7 +28,7 @@ export function Registrations() {
           <h2 className="text-[#0D1B2A] mb-4 font-bold" style={{ fontSize: 'clamp(1.5rem, 5vw, 2.5rem)' }}>Matrículas<div className="w-20 h-1 bg-[#F57C00] mx-auto mb-4"></div></h2>
 
           <p className="text-[#415A77] max-w-2xl mx-auto" style={{ fontSize: 'clamp(0.95rem, 3vw, 1.1rem)' }}>
-            Contando con la habilitación oficial para operar en las redes de Metrogas, Naturgy y Camuzzi.
+            Contamos con la habilitación oficial para operar en las redes de Metrogas, Naturgy y Camuzzi.
           </p>
         </div>
 
