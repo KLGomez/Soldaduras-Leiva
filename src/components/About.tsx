@@ -26,7 +26,7 @@ export function About() {
   ];
 
   return (
-    <section className="py-16 md:py-20 bg-gradient-to-br from-[#1B263B] to-[#0D1B2A] text-white">
+    <section id="nosotros" className="py-16 md:py-20 bg-gradient-to-br from-[#1B263B] to-[#0D1B2A] text-white">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 items-center">
           {/* Left Column - Image */}
