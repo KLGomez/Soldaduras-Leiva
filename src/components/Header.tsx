@@ -7,9 +7,10 @@ export function Header() {
 
   const menuItems = [
     { label: 'Inicio', href: '#inicio' },
+    { label: 'Certificaciones', href: '#matriculaciones' },
     { label: 'Servicios', href: '#servicios' },
+    { label: 'Nosotros', href: '#nosotros' },
     { label: 'Trabajos', href: '#trabajos' },
-    { label: 'Certificaciones', href: '#certificaciones' },
     { label: 'Contacto', href: '#contacto' },
   ];
 
