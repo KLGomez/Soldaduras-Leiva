@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin } from 'lucide-react';
+import { Phone, Mail, MapPin, Link } from 'lucide-react';
 import faviconImage from '../assets/favicon_sl.png';
 
 export function Footer() {
@@ -6,9 +6,10 @@ export function Footer() {
 
   const menuItems = [
     { label: 'Inicio', href: '#inicio' },
+    { label: 'Certificaciones', href: '#matriculaciones' },
     { label: 'Servicios', href: '#servicios' },
+    { label: 'Nosotros', href: '#nosotros' },
     { label: 'Trabajos', href: '#trabajos' },
-    { label: 'Certificaciones', href: '#certificaciones' },
     { label: 'Contacto', href: '#contacto' },
   ];
 
@@ -71,6 +72,12 @@ export function Footer() {
                 <Mail className="shrink-0" style={{ color: '#F57C00' }} size={20} />
                 <a href="mailto:info.soldadurasleiva@gmail.com" className="hover:text-[#F57C00] transition-colors" style={{ color: '#778DA9' }}>
                   info.soldadurasleiva@gmail.com
+                </a>
+              </div>
+              <div className="flex items-center gap-3">
+                <Link className="shrink-0" style={{ color: '#F57C00' }} size={20} />
+                <a href="https://www.linkedin.com/company/soldaduras-leiva" target="_blank" rel="noopener noreferrer" className="hover:text-[#F57C00] transition-colors" style={{ color: '#778DA9' }}>
+                  LinkedIn
                 </a>
               </div>
             </div>
