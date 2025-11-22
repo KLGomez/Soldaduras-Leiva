@@ -19,13 +19,13 @@ export function Header() {
         <div className="flex items-center justify-between h-20">
           {/* Logo - Izquierda */}
           <a href="#inicio" className="flex items-center gap-3">
-            <img 
-              src={logoImage} 
-              alt="Soldaduras Leiva Logo" 
+            <img
+              src={logoImage}
+              alt="Soldaduras Leiva Logo"
               className="h-12 w-auto"
             />
             <span className="text-white text-xl hidden sm:inline-block">
-              
+
             </span>
           </a>
 
