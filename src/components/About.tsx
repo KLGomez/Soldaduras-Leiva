@@ -29,16 +29,6 @@ export function About() {
     <section id="nosotros" className="py-16 md:py-20 bg-gradient-to-br from-[#1B263B] to-[#0D1B2A] text-white">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 items-center">
-          {/* Left Column - Image */}
-          <div className="md:col-span-5">
-            <div className="relative rounded-lg overflow-hidden shadow-2xl">
-              <ImageWithFallback
-                src="/vertical.gif"
-                alt="Equipo de trabajo profesional"
-                className="w-full h-full object-cover aspect-[3/4]"
-              />
-            </div>
-          </div>
 
           {/* Right Column - Content */}
           <div className="md:col-span-7">
@@ -73,6 +63,16 @@ export function About() {
                   </div>
                 );
               })}
+            </div>
+          </div>
+          {/* Left Column - Image */}
+          <div className="md:col-span-5">
+            <div className="relative rounded-lg overflow-hidden shadow-2xl">
+              <ImageWithFallback
+                src="/vertical.gif"
+                alt="Equipo de trabajo profesional"
+                className="w-full h-full object-cover aspect-[3/4]"
+              />
             </div>
           </div>
         </div>
