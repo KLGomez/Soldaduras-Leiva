@@ -1,16 +1,16 @@
-import { 
-  Flame, 
-/*   Droplet,  */
-  Wrench, 
-  GitMerge, 
-  Layers, 
-  Ruler, 
-/*   HardHat,  */
-  TrendingUp, 
-/*   Gauge, */ 
-  Mountain, 
-  Grid3x3, 
-  Cog 
+import {
+  Flame,
+  Droplet,
+  Wrench,
+  GitMerge,
+  Layers,
+  Ruler,
+  HardHat,
+  TrendingUp,
+  Gauge,
+  Mountain,
+  Grid3x3,
+  Cog
 } from 'lucide-react';
 
 export function Services() {
@@ -27,11 +27,6 @@ export function Services() {
       description: 'Instalación de ramales en tuberías sin interrumpir el servicio.',
       img: '/assets/serviceImage/tee-williamson.png',
     },
-/*     {
-      icon: Droplet,
-      title: 'Hot Tap',
-      description: 'Perforaciones en línea sin detener la operación del sistema.',
-    }, */
     {
       icon: Wrench,
       title: 'Empalmes especiales',
@@ -42,7 +37,7 @@ export function Services() {
       icon: Layers,
       title: 'Prefabricado de cañerías',
       description: 'Fabricación de tramos de tubería según especificaciones técnicas.',
-      img: '/assets/serviceImage/prefabricado-canerias.png',
+      img: '/assets/serviceImage/prefabricado-caneria.png',
     },
     {
       icon: Ruler,
@@ -50,40 +45,54 @@ export function Services() {
       description: 'Instalación subterránea con protección catódica y revestimientos.',
       img: '/assets/serviceImage/caneria-enterrada.png',
     },
-    {
+/*     {
       icon: Cog,
       title: 'Cañerías encamisadas',
       description: 'Sistemas de doble tubería para mayor seguridad y protección.',
       img: '/assets/serviceImage/prefabricado-canerias.png',
-    },
-/*     {
-      icon: Gauge,
-      title: 'Cañerías alta/baja presión',
-      description: 'Instalaciones para diferentes rangos de presión operativa.',
     }, */
     {
       icon: TrendingUp,
       title: 'Plantas reguladoras',
       description: 'Montaje y mantenimiento de estaciones de regulación de gas.',
-      img: '/assets/serviceImage/soldadura-montura.png',
+      img: '/assets/serviceImage/planta-reguladora.png',
     },
     {
       icon: Mountain,
       title: 'Montaje en altura',
       description: 'Trabajos especializados en estructuras elevadas con certificación.',
-      img: '/assets/serviceImage/tee-williamson.png',
+      img: '/assets/serviceImage/montaje-altura.png',
     },
     {
       icon: Grid3x3,
       title: 'Fabricación de tapas de cámaras',
       description: 'Elementos de cierre para cámaras de válvulas y accesos.',
-      img: '/assets/serviceImage/caneria-enterrada.png',
+      img: '/assets/serviceImage/tapa-camara.png',
     },
-/*     {
+    {
+      icon: Droplet,
+      title: 'Puente de Medición',
+      description: 'Estructuras para la medición y control de flujo en redes de gas.',
+      img: '/assets/serviceImage/puente-medicion.png',
+    },
+    {
+      icon: Gauge,
+      title: 'Cañerías alta presión',
+      description: 'Instalaciones para diferentes rangos de presión operativa.',
+      img: '/assets/serviceImage/alta-presion.png',
+    },
+    {
       icon: HardHat,
-      title: 'Proyectos integrales',
-      description: 'Soluciones completas desde el diseño hasta la puesta en marcha.',
-    }, */
+      title: 'Subestaciones de gas',
+      description: 'Construcción y mantenimiento de subestaciones para distribución segura.',
+      img: '/assets/serviceImage/subestacion-gas.png',
+    },
+    {
+      icon: Cog,
+      title: 'Filtros FM',
+      description: 'Fabricación e instalación de filtros para sistemas de gas.',
+      img: '/assets/serviceImage/filtros-fm.png',
+    }
   ];
 
   return (
@@ -91,9 +100,9 @@ export function Services() {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-[#0D1B2A] mb-4 font-bold" style={{ fontSize: 'clamp(1.5rem, 5vw, 2.5rem)' }}>Nuestros Servicios <div className="w-20 h-1 bg-[#F57C00] mx-auto mb-4"></div></h2>
-          
+
           <p className="text-[#415A77] max-w-2xl mx-auto" style={{ fontSize: 'clamp(0.95rem, 3vw, 1.1rem)' }}>
-            Ofrecemos servicios especializados de soldadura industrial con los más altos 
+            Ofrecemos servicios especializados de soldadura industrial con los más altos
             estándares de calidad y seguridad.
           </p>
         </div>
@@ -109,14 +118,14 @@ export function Services() {
                 {/* Imagen principal */}
                 {service.img && (
                   <div className="w-full h-56 bg-gray-200 overflow-hidden flex items-center justify-center">
-                    <img 
-                      src={service.img} 
+                    <img
+                      src={service.img}
                       alt={service.title}
                       className="w-full h-full object-contain hover:scale-105 transition-transform duration-300"
                     />
                   </div>
                 )}
-                
+
                 {/* Contenido */}
                 <div className="p-6 flex-1 flex flex-col">
                   {/* Título con icono */}
@@ -126,7 +135,7 @@ export function Services() {
                     </div>
                     <h3 className="text-[#0D1B2A] font-semibold text-sm sm:text-base">{service.title}</h3>
                   </div>
-                  
+
                   {/* Descripción */}
                   <p className="text-[#415A77] text-sm leading-relaxed flex-1">{service.description}</p>
                 </div>
