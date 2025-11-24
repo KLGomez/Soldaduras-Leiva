@@ -1,13 +1,13 @@
 import { 
   Flame, 
-  Droplet, 
+/*   Droplet,  */
   Wrench, 
   GitMerge, 
   Layers, 
   Ruler, 
 /*   HardHat,  */
   TrendingUp, 
-  Gauge, 
+/*   Gauge, */ 
   Mountain, 
   Grid3x3, 
   Cog 
@@ -19,56 +19,65 @@ export function Services() {
       icon: Flame,
       title: 'Soldadura de monturas',
       description: 'Instalación de conexiones en gasoductos activos con máxima precisión.',
+      img: '/assets/serviceImage/soldadura-montura.png',
     },
     {
       icon: GitMerge,
       title: 'Tee Williamson',
       description: 'Instalación de ramales en tuberías sin interrumpir el servicio.',
+      img: '/assets/serviceImage/tee-williamson.png',
     },
-    {
+/*     {
       icon: Droplet,
       title: 'Hot Tap',
       description: 'Perforaciones en línea sin detener la operación del sistema.',
-    },
+    }, */
     {
       icon: Wrench,
       title: 'Empalmes especiales',
       description: 'Uniones técnicas para requerimientos específicos de cada proyecto.',
+      img: '/assets/serviceImage/empalmes-especiales.png',
     },
     {
       icon: Layers,
       title: 'Prefabricado de cañerías',
       description: 'Fabricación de tramos de tubería según especificaciones técnicas.',
+      img: '/assets/serviceImage/prefabricado-canerias.png',
     },
     {
       icon: Ruler,
       title: 'Cañerías enterradas',
       description: 'Instalación subterránea con protección catódica y revestimientos.',
+      img: '/assets/serviceImage/caneria-enterrada.png',
     },
     {
       icon: Cog,
       title: 'Cañerías encamisadas',
       description: 'Sistemas de doble tubería para mayor seguridad y protección.',
+      img: '/assets/serviceImage/prefabricado-canerias.png',
     },
-    {
+/*     {
       icon: Gauge,
       title: 'Cañerías alta/baja presión',
       description: 'Instalaciones para diferentes rangos de presión operativa.',
-    },
+    }, */
     {
       icon: TrendingUp,
       title: 'Plantas reguladoras',
       description: 'Montaje y mantenimiento de estaciones de regulación de gas.',
+      img: '/assets/serviceImage/soldadura-montura.png',
     },
     {
       icon: Mountain,
       title: 'Montaje en altura',
       description: 'Trabajos especializados en estructuras elevadas con certificación.',
+      img: '/assets/serviceImage/tee-williamson.png',
     },
     {
       icon: Grid3x3,
       title: 'Fabricación de tapas de cámaras',
       description: 'Elementos de cierre para cámaras de válvulas y accesos.',
+      img: '/assets/serviceImage/caneria-enterrada.png',
     },
 /*     {
       icon: HardHat,
@@ -89,22 +98,37 @@ export function Services() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {services.map((service, index) => {
             const IconComponent = service.icon;
             return (
               <div
                 key={index}
-                className="bg-[#E0E1DD] p-6 rounded-lg hover:shadow-lg transition-all border-l-4 border-[#F57C00] hover:border-[#415A77]"
+                className="bg-[#E0E1DD] rounded-lg overflow-hidden hover:shadow-xl transition-all hover:scale-105 border-t-4 border-[#F57C00] hover:border-[#415A77] flex flex-col h-full"
               >
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 flex-shrink-0 bg-[#415A77] rounded-lg flex items-center justify-center">
-                    <IconComponent className="text-white" size={24} />
+                {/* Imagen principal */}
+                {service.img && (
+                  <div className="w-full h-56 bg-gray-200 overflow-hidden flex items-center justify-center">
+                    <img 
+                      src={service.img} 
+                      alt={service.title}
+                      className="w-full h-full object-contain hover:scale-105 transition-transform duration-300"
+                    />
                   </div>
-                  <div className="flex-1">
-                    <h3 className="text-[#0D1B2A] mb-2">{service.title}</h3>
-                    <p className="text-[#415A77]">{service.description}</p>
+                )}
+                
+                {/* Contenido */}
+                <div className="p-6 flex-1 flex flex-col">
+                  {/* Título con icono */}
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-8 h-8 shrink-0 bg-[#F57C00] rounded-md flex items-center justify-center">
+                      <IconComponent className="text-white" size={18} />
+                    </div>
+                    <h3 className="text-[#0D1B2A] font-semibold text-sm sm:text-base">{service.title}</h3>
                   </div>
+                  
+                  {/* Descripción */}
+                  <p className="text-[#415A77] text-sm leading-relaxed flex-1">{service.description}</p>
                 </div>
               </div>
             );
