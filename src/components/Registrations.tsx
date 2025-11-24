@@ -37,7 +37,7 @@ export function Registrations() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
           {registrations.map((reg, index) => {
             const IconComponent = reg.icon;
             return (
