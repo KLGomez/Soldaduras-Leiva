@@ -6,9 +6,10 @@ interface ProjectCarouselProps {
   image: string;
   title: string;
   category: string;
+  description: string;
 }
 
-export function ProjectCarousel({ image, title, category }: ProjectCarouselProps) {
+export function ProjectCarousel({ image, title, category, description }: ProjectCarouselProps) {
   // Triple la imagen para simular contenido del slide
   const slides = [image, image, image];
   
@@ -184,7 +185,8 @@ export function ProjectCarousel({ image, title, category }: ProjectCarouselProps
             {category}
           </span>
         </div>
-        <h3 className="text-[#0D1B2A] font-semibold">{title}</h3>
+        <h3 className="text-[#0D1B2A] font-semibold text-lg mb-2">{title}</h3>
+        <p className="text-[#415A77] text-sm leading-relaxed">{description}</p>
       </div>
     </div>
   );
