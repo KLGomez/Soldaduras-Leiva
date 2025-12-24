@@ -41,8 +41,8 @@ export function Services() {
     },
     {
       icon: Ruler,
-      title: 'Cañerías enterradas',
-      description: 'Instalación subterránea con protección catódica y revestimientos.',
+      title: 'Gasoductos',
+      description: 'Instalación de redes de distribución de gas seguras y eficientes.',
       img: '/assets/serviceImage/caneria-enterrada.png',
     },
 /*     {

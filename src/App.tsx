@@ -4,7 +4,7 @@ import { Certifications } from './components/Certifications';
 import { Registrations } from './components/Registrations';
 import { Services } from './components/Services';
 import { About } from './components/About';
-import { Portfolio } from './components/Portfolio';
+import { Portfolio } from './components/Carrousel';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 
